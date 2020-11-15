@@ -67,7 +67,7 @@ choose X and Y button<br>
 :bulb: Drag the slider bar on the top could scale the cube
 
 
-I hope those could be useful!.
+I hope those could be useful !.
 
 Ruikang Xu
 

@@ -4,18 +4,8 @@
     <projectFile>CubeTrans/CubeTrans.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ded418f-c59a-45e8-ae55-1aea388f4511" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CubeTrans/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CubeTrans/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CubeTrans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CubeTrans/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/MyForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/MyForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/MyForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/MyForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/CubeTrans.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/CubeTrans.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/Debug/netcoreapp3.1/CubeTrans.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/Debug/netcoreapp3.1/CubeTrans.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/Debug/netcoreapp3.1/CubeTrans.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/Debug/netcoreapp3.1/CubeTrans.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CubeTrans/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CubeTrans/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="8ded418f-c59a-45e8-ae55-1aea388f4511" name="Default Changelist" comment="- update comments">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/C# projects/Cube3D/CubeTrans/MyForm.Designer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/70CDA170-D753-4E08-9BF1-5D9DF41F764E/11/Graphics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -38,6 +29,8 @@
         <option value="$PROJECT_DIR$/CubeTrans/Moduels/Matrix4x4.cs" />
         <option value="$PROJECT_DIR$/CubeTrans/MyForm.Designer.cs" />
         <option value="$PROJECT_DIR$/CubeTrans/MyForm.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -95,8 +88,16 @@
       <workItem from="1603850923411" duration="1568000" />
       <workItem from="1603878773906" duration="1363000" />
       <workItem from="1603907655098" duration="6280000" />
-      <workItem from="1605406757603" duration="187000" />
+      <workItem from="1605406757603" duration="509000" />
     </task>
+    <task id="LOCAL-00001" summary="- update comments">
+      <created>1605407231600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605407231600</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,8 +105,21 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="- update comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603718806084">
