@@ -123,7 +123,7 @@
             this.Controls.Add(this.trackBar1);
             this.DoubleBuffered = true;
             this.Name = "MyForm";
-            this.Text = "Ruikang Xu";
+            this.Text = "Ruikang Xu(20175671)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).EndInit();

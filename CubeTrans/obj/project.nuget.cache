@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ilG+0t6/Pu7VuQuO3jlyRLeSSt2MboI98Vnce7x64IJOk6EUOHJ376ZWFDi7sCzLFaO12yXcBKkomvS7c4CECQ==",
+  "dgSpecHash": "uGoUxpbppMFmmNm2AZ7m7sGolsIjx6vgB1YFNwfEUZzf9WmYbG/IkddyZ0HfiuNZq0KijZCSYn36BFKg3WyYow==",
   "success": true,
-  "projectFilePath": "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\CubeTrans.csproj",
+  "projectFilePath": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

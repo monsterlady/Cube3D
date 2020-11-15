@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\CubeTrans.csproj": {}
+    "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {}
   },
   "projects": {
-    "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\CubeTrans.csproj": {
+    "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\CubeTrans.csproj",
+        "projectUniqueName": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
         "projectName": "CubeTrans",
-        "projectPath": "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\CubeTrans.csproj",
+        "projectPath": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
         "packagesPath": "C:\\Users\\xurui\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\RemasterCube\\CubeTrans\\CubeTrans\\obj\\",
+        "outputPath": "E:\\C# projects\\Cube3D\\CubeTrans\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xurui\\AppData\\Roaming\\NuGet\\NuGet.Config"

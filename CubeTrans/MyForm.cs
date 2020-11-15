@@ -8,6 +8,7 @@ namespace CubeTransform
     {
         /// <summary>
         /// 方块的缩放
+        /// scale
         /// </summary>
         private Matrix4x4 scale;
         /// <summary>
@@ -42,7 +43,6 @@ namespace CubeTransform
             Vector4 b = new Vector4(0.5, -0.5, 0, 1);
             Vector4 c = new Vector4(-0.5, -0.5, 0, 1);
 //            Vector4 d = new Vector4(0,-0.5,0,1);
-           // t = new Triangle3D(a, b, c);
             scale = new Matrix4x4();
             rotateY = new Matrix4x4();
             rotateX = new Matrix4x4();
@@ -94,19 +94,20 @@ namespace CubeTransform
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            //canvas
             e.Graphics.TranslateTransform(300, 300);
-//            t.Draw(e.Graphics);
             cube.Draw(e.Graphics, false);
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            //美秒变化的角度
+            //angle per sec
             a += 1;
             double angle = a / 360.0 * Math.PI;
 
             //Y =====
             /*绕Y轴旋转A度
+             rotate A degree around Y
             cosA, 0, -sinA
             0,    1,   0
             sinA, 0, cosA
@@ -125,6 +126,7 @@ namespace CubeTransform
 
             // X ===
             /* 绕X轴旋转A度
+             rotate A degree around X
             1,     0,    0
             0,  cosA, sinA
             0, -sinA, cosA
@@ -144,7 +146,7 @@ namespace CubeTransform
 
             // Z === 
             /*
-             * 绕Z轴旋转A度
+             * rotate A degree around Z
             cosA, sinA, 0
            -sinA, cosA, 0
             0,    0,    1
@@ -162,17 +164,15 @@ namespace CubeTransform
                 rotateZ = rotateZ.Mul(tx);
             }
 
-            //缩放
+            //缩放 scale
             Matrix4x4 model = scale.Mul(rotateX);
             model = model.Mul(rotateY);
             model = model.Mul(rotateZ);
             //加上光源
+            //calculate lighting
             cube.CalNormalLighting(model, new Vector4(-1, 1, -1, 0));
-//            t.CalNormalLighting(m,new Vector4(-1,1,-1,0)); 
-
             Matrix4x4 modelView = model.Mul(view);
             mvp = modelView.Mul(projection);
-            //            t.Transform(mvp);
             cube.transform(mvp);
             // show the matrix
             textBox1.Text = mvp.ToString();
