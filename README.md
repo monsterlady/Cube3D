@@ -71,7 +71,7 @@ I hope those could be useful !.
 Ruikang Xu
 
 
-### ✨ [Download](https://monsterlady.github.io/ZombieNPC/)
+### ✨ [Download](https://github.com/monsterlady/Cube3D/releases/tag/V0.0.1)
 
 ## Comments
 
