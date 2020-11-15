@@ -72,6 +72,7 @@ Ruikang Xu
 
 
 ### ✨ [Download](https://github.com/monsterlady/Cube3D/releases/tag/V0.0.1)
+![avatar](https://github.com/monsterlady/Cube3D/blob/main/CubeTrans/demo.gif)
 
 ## Comments
 
