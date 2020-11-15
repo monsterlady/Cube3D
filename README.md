@@ -23,13 +23,12 @@ This project is fully based on Math class slides, two great Blog Articles and on
 ### 1- Unity : From noob to expert Ch.1 3D Math
 Link: https://www.bookstack.cn/read/shenjun-unity/98.md
 
-
 ### 2- 3D shapes - knowledge about matrix
 
 Link:https://www.jianshu.com/p/ab71816f7d82
 
 ### 3- Coding Challenge #112: 3D Rendering with Rotation and Projection
-https://www.youtube.com/watch?v=p4Iz0XJY-Qk
+Link:https://www.youtube.com/watch?v=p4Iz0XJY-Qk
 
 ## Notes:
 
