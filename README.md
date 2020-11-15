@@ -31,9 +31,6 @@ Link:https://www.jianshu.com/p/ab71816f7d82
 Link:https://www.youtube.com/watch?v=p4Iz0XJY-Qk
 
 ## Notes:
-
-:bulb: There are 2 different AI in the project:
-
 #### :low_brightness: 1- Rotate Angle:
 The rotate angle is hardcoded at **Timer1_Tick** method in **MyFrom.cs**, it rotate around all axis(default settings).
 ```
