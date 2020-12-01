@@ -11,30 +11,164 @@ namespace CubeTransform
         /// scale
         /// </summary>
         private Matrix4x4 scale;
+
         /// <summary>
         /// Y 轴
         /// </summary>
         private Matrix4x4 rotateY;
+
         /// <summary>
         /// X 轴
         /// </summary>
         private Matrix4x4 rotateX;
+
         /// <summary>
         /// Z 轴
         /// </summary>
         private Matrix4x4 rotateZ;
+
         private Matrix4x4 view;
         private Matrix4x4 projection;
+
         /// <summary>
         /// Model*View*Projection matrix
         /// </summary>
         private Matrix4x4 mvp;
+
         private int a;
         private MyCube.MyCube cube;
+        private int currentMouseX;
+        private int currentMouseY;
+        private double angle;
+        private double angley;
+        private bool fi;
 
         public MyForm()
         {
             InitializeComponent();
+        }
+
+
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                int mouseXoffset = Cursor.Position.X - currentMouseX;
+                int mouseyoffset = Cursor.Position.Y - currentMouseY;
+
+
+                //angle per sec
+                a = 5;
+                angle = a / 360.0 * Math.PI * mouseXoffset;
+                angley = a / 360.0 * Math.PI * mouseyoffset;
+                //Y =====
+                /*绕Y轴旋转A度
+                 rotate A degree around Y
+                cosA, 0, -sinA
+                0,    1,   0
+                sinA, 0, cosA
+                */
+                rotateY[0, 0] = Math.Cos(angley);
+                rotateY[0, 2] = Math.Sin(angley);
+                rotateY[1, 1] = 1;
+                rotateY[2, 0] = -Math.Sin(angley);
+                rotateY[2, 2] = Math.Cos(angley);
+                rotateY[3, 3] = 1;
+                if (this.checkBox2.Checked)
+                {
+                    Matrix4x4 tx = rotateY.Transpose();
+                    rotateY = rotateY.Mul(tx);
+                }
+
+                // X ===
+                /* 绕X轴旋转A度
+                 rotate A degree around X
+                1,     0,    0
+                0,  cosA, sinA
+                0, -sinA, cosA
+            */
+                rotateX[0, 0] = 1;
+                rotateX[1, 1] = Math.Cos(angle);
+                rotateX[1, 2] = Math.Sin(angle);
+                rotateX[2, 1] = -Math.Sin(angle);
+                rotateX[2, 2] = Math.Cos(angle);
+                rotateX[3, 3] = 1;
+
+                if (this.checkBox1.Checked)
+                {
+                    Matrix4x4 tx = rotateX.Transpose();
+                    rotateX = rotateX.Mul(tx);
+                }
+
+                //缩放 scale
+                Matrix4x4 model = scale.Mul(rotateX);
+                model = model.Mul(rotateY);
+                model = model.Mul(rotateZ);
+                //加上光源
+                //calculate lighting
+                cube.CalNormalLighting(model, new Vector4(-1, 1, -1, 0));
+                Matrix4x4 modelView = model.Mul(view);
+                mvp = modelView.Mul(projection);
+                cube.transform(mvp);
+                // show the matrix
+                textBox1.Text = mvp.ToString();
+                this.Invalidate();
+            }
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                //MessageBox.Show("左键");
+                currentMouseX = Cursor.Position.X;
+                currentMouseY = Cursor.Position.Y;
+            }
+        }
+
+        private void RotateX3D(double theta)
+        {
+            // X ===
+            /* 绕X轴旋转A度
+             rotate A degree around X
+            1,     0,    0
+            0,  cosA, sinA
+            0, -sinA, cosA
+        */
+            rotateX[0, 0] = 1;
+            rotateX[1, 1] = Math.Cos(theta);
+            rotateX[1, 2] = Math.Sin(theta);
+            rotateX[2, 1] = -Math.Sin(theta);
+            rotateX[2, 2] = Math.Cos(theta);
+            rotateX[3, 3] = 1;
+
+            if (this.checkBox1.Checked)
+            {
+                Matrix4x4 tx = rotateX.Transpose();
+                rotateX = rotateX.Mul(tx);
+            }
+        }
+
+        private void RotateY3D(double theta)
+        {
+            //Y =====
+            /*绕Y轴旋转A度
+             rotate A degree around Y
+            cosA, 0, -sinA
+            0,    1,   0
+            sinA, 0, cosA
+            */
+            rotateY[0, 0] = Math.Cos(theta);
+            rotateY[0, 2] = Math.Sin(theta);
+            rotateY[1, 1] = 1;
+            rotateY[2, 0] = -Math.Sin(theta);
+            rotateY[2, 2] = Math.Cos(theta);
+            rotateY[3, 3] = 1;
+            if (this.checkBox2.Checked)
+            {
+                Matrix4x4 tx = rotateY.Transpose();
+                rotateY = rotateY.Mul(tx);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -99,69 +233,71 @@ namespace CubeTransform
             cube.Draw(e.Graphics, false);
         }
 
+
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            //angle per sec
-            a += 1;
-            double angle = a / 360.0 * Math.PI;
-
-            //Y =====
-            /*绕Y轴旋转A度
-             rotate A degree around Y
-            cosA, 0, -sinA
-            0,    1,   0
-            sinA, 0, cosA
+            if (!fi)
+            {
+                //Y =====
+                /*绕Y轴旋转A度
+                 rotate A degree around Y
+                cosA, 0, -sinA
+                0,    1,   0
+                sinA, 0, cosA
+                */
+                rotateY[0, 0] = Math.Cos(0);
+                rotateY[0, 2] = Math.Sin(0);
+                rotateY[1, 1] = 1;
+                rotateY[2, 0] = -Math.Sin(0);
+                rotateY[2, 2] = Math.Cos(0);
+                rotateY[3, 3] = 1;
+                if (this.checkBox2.Checked)
+                {
+                    Matrix4x4 tx = rotateY.Transpose();
+                    rotateY = rotateY.Mul(tx);
+                }
+        
+                // X ===
+                /* 绕X轴旋转A度
+                 rotate A degree around X
+                1,     0,    0
+                0,  cosA, sinA
+                0, -sinA, cosA
             */
-            rotateY[0, 0] = Math.Cos(angle);
-            rotateY[0, 2] = Math.Sin(angle);
-            rotateY[1, 1] = 1;
-            rotateY[2, 0] = -Math.Sin(angle);
-            rotateY[2, 2] = Math.Cos(angle);
-            rotateY[3, 3] = 1;
-            if (this.checkBox2.Checked)
-            {
-                Matrix4x4 tx = rotateY.Transpose();
-                rotateY = rotateY.Mul(tx);
-            }
+                rotateX[0, 0] = 1;
+                rotateX[1, 1] = Math.Cos(0);
+                rotateX[1, 2] = Math.Sin(0);
+                rotateX[2, 1] = -Math.Sin(0);
+                rotateX[2, 2] = Math.Cos(0);
+                rotateX[3, 3] = 1;
+        
+                if (this.checkBox1.Checked)
+                {
+                    Matrix4x4 tx = rotateX.Transpose();
+                    rotateX = rotateX.Mul(tx);
+                }
+        
+                // Z === 
+                /*
+                 * rotate A degree around Z
+                cosA, sinA, 0
+               -sinA, cosA, 0
+                0,    0,    1
+                 */
+                rotateZ[0, 0] = Math.Cos(0);
+                rotateZ[0, 1] = Math.Sin(0);
+                rotateZ[1, 0] = -Math.Sin(0);
+                rotateZ[1, 1] = Math.Cos(0);
+                rotateZ[2, 2] = 1;
+                rotateZ[3, 3] = 1;
+                //transpose
+                if (this.checkBox3.Checked)
+                {
+                    Matrix4x4 tx = rotateZ.Transpose();
+                    rotateZ = rotateZ.Mul(tx);
+                }
 
-            // X ===
-            /* 绕X轴旋转A度
-             rotate A degree around X
-            1,     0,    0
-            0,  cosA, sinA
-            0, -sinA, cosA
-        */
-            rotateX[0, 0] = 1;
-            rotateX[1, 1] = Math.Cos(angle);
-            rotateX[1, 2] = Math.Sin(angle);
-            rotateX[2, 1] = -Math.Sin(angle);
-            rotateX[2, 2] = Math.Cos(angle);
-            rotateX[3, 3] = 1;
-
-            if (this.checkBox1.Checked)
-            {
-                Matrix4x4 tx = rotateX.Transpose();
-                rotateX = rotateX.Mul(tx);
-            }
-
-            // Z === 
-            /*
-             * rotate A degree around Z
-            cosA, sinA, 0
-           -sinA, cosA, 0
-            0,    0,    1
-             */
-            rotateZ[0, 0] = Math.Cos(angle);
-            rotateZ[0, 1] = Math.Sin(angle);
-            rotateZ[1, 0] = -Math.Sin(angle);
-            rotateZ[1, 1] = Math.Cos(angle);
-            rotateZ[2, 2] = 1;
-            rotateZ[3, 3] = 1;
-            //transpose
-            if (this.checkBox3.Checked)
-            {
-                Matrix4x4 tx = rotateZ.Transpose();
-                rotateZ = rotateZ.Mul(tx);
+                fi = true;
             }
 
             //缩放 scale
