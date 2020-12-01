@@ -21,9 +21,7 @@ namespace CubeTransform.MyCube
             // TOP
             triangle3Ds[0] = new Triangle3D(A, B, C);
             triangle3Ds[1] = new Triangle3D(D, A, C);
-
             
-
             //FRONT
             triangle3Ds[2] = new Triangle3D(D, C, G);
             triangle3Ds[3] = new Triangle3D(D, G, H);
@@ -49,8 +47,6 @@ namespace CubeTransform.MyCube
         {
             for (int i = 0; i < triangle3Ds.Length; i++)
                 triangle3Ds[i].Transform(m);
-
-
         }
         public void CalNormalLighting(Matrix4x4 m, Vector4 lightDir)
         {

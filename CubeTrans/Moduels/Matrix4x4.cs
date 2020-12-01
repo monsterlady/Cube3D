@@ -90,7 +90,7 @@
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    if (j % 4 == 0)
+                    if (j % 3 == 0)
                     {
                         str += (int)pts[j, i] + '\n';
                     }
@@ -98,7 +98,7 @@
                     {
                         str += (int)pts[j, i] + ",";
                     }
-                }
+                }  
             }
 
             return str;
