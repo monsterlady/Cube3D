@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {}
+    "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {}
   },
   "projects": {
-    "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {
+    "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
+        "projectUniqueName": "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
         "projectName": "CubeTrans",
-        "projectPath": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
-        "packagesPath": "C:\\Users\\xurui\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\Cube3D\\CubeTrans\\obj\\",
+        "projectPath": "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
+        "packagesPath": "C:\\Users\\233\\.nuget\\packages\\",
+        "outputPath": "E:\\C#_projects\\Cube3D\\CubeTrans\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\xurui\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\233\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

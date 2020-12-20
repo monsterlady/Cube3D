@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
+    "projectUniqueName": "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
     "projectName": "CubeTrans",
-    "projectPath": "E:\\C# projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
-    "outputPath": "E:\\C# projects\\Cube3D\\CubeTrans\\obj\\",
+    "projectPath": "E:\\C#_projects\\Cube3D\\CubeTrans\\CubeTrans.csproj",
+    "outputPath": "E:\\C#_projects\\Cube3D\\CubeTrans\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -43,7 +43,7 @@
           "privateAssets": "none"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
     }
   }
 }

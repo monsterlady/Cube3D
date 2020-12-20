@@ -90,12 +90,22 @@
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    str += (int) pts[j, i] + ",";
+                    str += (int) pts[i, j] + ",";
                     str += (j == 3) ? "\n" : "";
                 }
             }
 
             return str;
+        }
+
+        public double GetNumber(int x, int y)
+        {
+            return pts[x, y];
+        }
+
+        public void SetNumber(int x, int y,double target)
+        {
+            pts[x, y] = target;
         }
     }
 }

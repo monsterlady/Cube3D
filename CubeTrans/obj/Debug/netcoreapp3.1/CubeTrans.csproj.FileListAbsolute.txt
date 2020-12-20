@@ -28,3 +28,18 @@ E:\C# projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.csproj.CoreCom
 E:\C# projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.dll
 E:\C# projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.pdb
 E:\C# projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.genruntimeconfig.cache
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.dll
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.pdb
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.exe
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.deps.json
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.runtimeconfig.json
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.runtimeconfig.dev.json
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.dll
+E:\C#_projects\Cube3D\CubeTrans\bin\Debug\netcoreapp3.1\CubeTrans.pdb
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.csprojAssemblyReference.cache
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTransform.MyForm.resources
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.csproj.GenerateResource.cache
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.AssemblyInfoInputs.cache
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.AssemblyInfo.cs
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.csproj.CoreCompileInputs.cache
+E:\C#_projects\Cube3D\CubeTrans\obj\Debug\netcoreapp3.1\CubeTrans.genruntimeconfig.cache
