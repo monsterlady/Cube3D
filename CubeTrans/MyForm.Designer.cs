@@ -58,6 +58,9 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,11 +289,38 @@
             this.textBox20.TabIndex = 21;
             this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
             // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(465, 640);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(39, 25);
+            this.textBox21.TabIndex = 25;
+            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(544, 640);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(39, 25);
+            this.textBox22.TabIndex = 26;
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(625, 640);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(39, 25);
+            this.textBox23.TabIndex = 27;
+            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+            // 
             // MyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 750);
+            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox21);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.textBox19);
@@ -326,6 +356,10 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
 
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;

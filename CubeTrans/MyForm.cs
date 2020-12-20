@@ -74,6 +74,7 @@ private void SetMatrix()
         private void PaintMatrix()
         {
             cube.transform(mvp);
+            Console.WriteLine("123123123123123");
             textBox1.Text = mvp.ToString();
             this.Invalidate();
         }
@@ -713,6 +714,39 @@ private void SetMatrix()
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
             //throw new System.NotImplementedException();
+        }
+
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+            double tx = 0;
+            if(!textBox21.Text.ToString().Equals(""))
+            {
+                tx = Double.Parse(textBox21.Text);
+            }
+            mvp.SetNumber(3,0,tx);
+            PaintMatrix();
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+            double ty = 0;
+            if(!textBox22.Text.ToString().Equals(""))
+            {
+                ty = Double.Parse(textBox22.Text);
+            }
+            mvp.SetNumber(3,1,ty);
+            PaintMatrix();
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+            double tz = 0;
+            if(!textBox23.Text.ToString().Equals(""))
+            {
+                tz = Double.Parse(textBox23.Text);
+            }
+            mvp.SetNumber(3,2,tz);
+            PaintMatrix();
         }
     }
 }
